@@ -1,0 +1,4 @@
+#!/bin/bash
+> msgs.txt
+echo "alice: hello<br>" >> msgs.txt
+echo "bob: whatever<br>" >> msgs.txt

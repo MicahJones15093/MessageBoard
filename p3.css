@@ -1,0 +1,23 @@
+.animatedLogo {
+    width: 75px;
+    height: 75px;
+    position: relative;
+    left: 50px;
+    background-color: red;
+    animation-name: rainbow, dance;
+    animation-duration: 2s;
+    animation-iteration-count: 2;
+}
+
+@keyframes rainbow {
+    0%, 100%    {background-color: red;}
+    25%         {background-color: orange;}
+    50%         {background-color: green;}
+    75%         {background-color: purple;}
+}
+
+@keyframes dance {
+    0%,50%,100% {transform: translate(0, 0) rotate(0deg) ;}
+    25%         {transform: translate(50px, 0) rotate(-10deg) ;}
+    75%         {transform: translate(-50px, 0) rotate(10deg) ;}
+}

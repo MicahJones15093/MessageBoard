@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<!-- Micah Jones Project 3 -->
+<!-- CSCI 5410 3/19/2019 -->
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Message Board</title>
+
+    <link rel="stylesheet" type="text/css" href="p3.css">
+    <script src="p3.js"></script>
+</head>
+<body>
+
+    <h3>P3 - Message Board</h3>
+    
+    <div class="animatedLogo">
+    <img src="logo75.png" alt="logo">
+    </div>
+
+    <form name="messages" method="get" action="../cgi-bin/hello.py">
+        <p><label>Name: <input type="text" name="name" id="name"></label></p>
+        <p><label>Message: <input type="text" name = "text" id="text"></label></p>
+
+        <p><button type="submit" id="post">Post Message</button></p>
+        <p><button type="button" id="clear">Clear Session Storage (saved name)</button></p>
+    </form>
+
+    <h3>Posted Msgs</h3>
+
+    <section id="dataBox"></section>
+</body>
+</html>
